@@ -13,3 +13,51 @@ h2 {
     height: 1px;
     overflow: hidden;
 }
+
+.container{
+ max-width: 1170px;
+}
+/* 
+section {
+    background:  ;
+} */
+
+
+
+
+/* ==========header============= */
+
+.header {
+position: relative;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.header__logo {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+}
+
+.header__content {
+  
+    text-align: center;
+}
+
+
+/* +++++++++++features============ */
+
+.features__items {
+    display: flex;
+}
