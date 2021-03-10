@@ -14,9 +14,17 @@ h2 {
     overflow: hidden;
 }
 
-.container{
- max-width: 1170px;
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
+
+.container--small {
+    width: 470px;
+    margin: 0;
+}
+
 /* 
 section {
     background:  ;
@@ -28,12 +36,12 @@ section {
 /* ==========header============= */
 
 .header__top {
-position: relative;
-margin-top: 20px;
+    position: relative;
+    margin-top: 20px;
 }
 
 .header__content {
-  
+
     text-align: center;
 }
 
@@ -86,32 +94,46 @@ margin-top: 20px;
 
 /* +++++++++++iphone============ */
 
-.container-small {
-    width: 470px;
-}
+
 
 .iphone {
     display: flex;
     flex-direction: row-reverse;
 }
- 
+
 /* +++++++++++map============ */
 
 .map {
     display: flex;
-    
+
 }
 
 
 
 
 
+/* +++++++++++screen============ */
+
+.screen {
+    text-align: center;
+}
+
+.screen__items {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/* +++++++++++smartphone============ */
+
+.smartphone {
+    text-align: center;
+}
 
 
 
 
-/* +++++++++++features============ */
-/* +++++++++++features============ */
 /* +++++++++++features============ */
 /* +++++++++++features============ */
 /* +++++++++++features============ */
