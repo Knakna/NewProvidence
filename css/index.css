@@ -27,8 +27,14 @@ section {
 
 /* ==========header============= */
 
-.header {
+.header__top {
 position: relative;
+margin-top: 20px;
+}
+
+.header__content {
+  
+    text-align: center;
 }
 
 .header__nav {
@@ -44,16 +50,31 @@ position: relative;
 
 }
 
+/* .header__logo {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    z-index: 1;
+    margin: auto;
+    text-align: center;
+} */
+
 .header__logo {
     position: absolute;
-    top: 20px;
+    z-index: 1;
+    top: 0;
     left: 50%;
+    transform: translateX(-50%);
 }
 
-.header__content {
-  
-    text-align: center;
-}
+
+
+
+
 
 
 /* +++++++++++features============ */
@@ -61,3 +82,39 @@ position: relative;
 .features__items {
     display: flex;
 }
+
+
+/* +++++++++++iphone============ */
+
+.container-small {
+    width: 470px;
+}
+
+.iphone {
+    display: flex;
+    flex-direction: row-reverse;
+}
+ 
+/* +++++++++++map============ */
+
+.map {
+    display: flex;
+    
+}
+
+
+
+
+
+
+
+
+
+/* +++++++++++features============ */
+/* +++++++++++features============ */
+/* +++++++++++features============ */
+/* +++++++++++features============ */
+/* +++++++++++features============ */
+/* +++++++++++features============ */
+/* +++++++++++features============ */
+/* +++++++++++features============ */
