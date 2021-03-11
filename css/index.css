@@ -1,9 +1,16 @@
 body {
     font-family: 'Lato', sans-serif;
+    max-width: 1600px;
 }
 
 h2 {
     font-family: 'Varela Round', sans-serif;
+}
+
+
+section {
+    margin-bottom: 50px;
+    background: linear-gradient(#c3d1da, rgb(202, 180, 202));
 }
 
 .visuallyhidden {
@@ -20,7 +27,7 @@ h2 {
     padding: 0 15px;
 }
 
-.container--small {
+.container-small {
     width: 470px;
     margin: 0;
 }
@@ -34,6 +41,13 @@ section {
 
 
 /* ==========header============= */
+
+.header {
+    background: url('../img/header/bg.jpg') center center/cover no-repeat;
+    height: 950px;
+    overflow: hidden;
+    position: relative;
+}
 
 .header__top {
     position: relative;
@@ -58,6 +72,9 @@ section {
 
 }
 
+
+
+
 /* .header__logo {
     
     position: absolute;
@@ -79,7 +96,15 @@ section {
     transform: translateX(-50%);
 }
 
-
+.header__img {
+    width: 370px;
+    display: block;
+    position: absolute;
+    z-index: 1;
+    bottom: -300px;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
 
 
@@ -87,8 +112,16 @@ section {
 
 /* +++++++++++features============ */
 
+
+
 .features__items {
     display: flex;
+}
+
+.features__item {
+    width: 570px;
+    padding: 0 40px 30px;
+
 }
 
 
@@ -97,15 +130,45 @@ section {
 
 
 .iphone {
+    height: 943px;
+    position: relative;
+    /* overflow: hidden; */
     display: flex;
     flex-direction: row-reverse;
+    align-items: center;
+
+
+
+}
+
+
+
+.iphone__img {
+    position: absolute;
+    display: block;
+    bottom: -30px;
+    left: -215px;
 }
 
 /* +++++++++++map============ */
 
 .map {
     display: flex;
+    height: 800px;
+    position: relative;
+    /* overflow: hidden; */
+    display: flex;
+    align-items: center;
 
+}
+
+
+.map__img {
+    position: absolute;
+    display: block;
+    bottom: 195px;
+    
+    right: -215px;
 }
 
 
@@ -121,6 +184,13 @@ section {
 .screen__items {
     display: flex;
     justify-content: space-between;
+    height: 1100px;
+    
+}
+
+.screen__img {
+    height: 100%;
+   
 }
 
 
@@ -134,9 +204,85 @@ section {
 
 
 
-/* +++++++++++features============ */
-/* +++++++++++features============ */
-/* +++++++++++features============ */
-/* +++++++++++features============ */
-/* +++++++++++features============ */
-/* +++++++++++features============ */
+/* +++++++++++feedback============ */
+
+.swiper-container {
+    width: 600px;
+    height: 400px;
+}
+
+.swiper-wrapper {
+    width: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+}
+
+
+
+
+/* +++++++++++plan============ */
+.plan {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.plan__boxes {
+    display: flex;
+
+}
+
+
+
+/* +++++++++++subscribe====== */
+.subscribe {
+    text-align: center;
+}
+
+
+
+
+
+
+/* +++++++++++footer============ */
+
+.footer__top {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.footer__boxes {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-icons__link {
+    text-decoration: none;
+}
+
+.footer__box {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer__img {
+    width: 140px;
+    height: 16px;
+
+}
+
+.footer__link {
+    display: block;
+}
+
+
+
+
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+
+}
