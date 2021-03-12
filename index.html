@@ -28,17 +28,23 @@
             <nav class="header__nav">
 
                 <ul class="header__list">
-                    <li class="header__burger"><a class="header__link-burger" href="#">---</a></li>
+                    <li class="header__burger"><span>-</span></li>
                     <li class="header__item"><a class="header__link" href="#">Tour</a></li>
                     <li class="header__item"><a class="header__link" href="#">Features</a></li>
                     <li class="header__item"><a class="header__link" href="#">Pricing</a></li>
                 </ul>
 
                 <ul class="header__list">
-                    <li class="header__item"><a class="header__link" href="#">
-                            <span class="header__link-opacity">Help</span> </a></li>
-                    <li class="header__item"><a class="header__link" href="#">Contacts</a></li>
-                    <li class="header__item"> <button class="header__btn btn  btn--blue">Get App</button>
+                    <li class="header__item">
+                        <a class="header__link" href="#">
+                            <span class="header__link-opacity">Help</span>
+                        </a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="#">Contacts</a>
+                    </li>
+                    <li class="header__item">
+                        <button class="header__btn btn  btn--blue">Get App</button>
                     </li>
                 </ul>
 
@@ -52,12 +58,11 @@
         </div> <!-- /.header__top  container -->
 
 
-        <div class="header__content container">
+        <div class="header__content">
             <h2 class="header__title">What happens tomorrow?</h2>
-            <div class="header__text text">The sight of the tumblers restored Bob Sawyer to a degree of equanimity which
-                he
-                had not possessed since his interview with his landlady. His face brightened up, and he began to feel
-                quite convivial.</div>
+            <p class="header__text text">The sight of the tumblers restored Bob Sawyer to a degree of equanimity which
+                he had not possessed since his interview with his landlady. His face brightened up, and he began to feel
+                quite convivial.</p>
             <button class="header__btn btn btn--transparent">Watch Video</button>
 
 
@@ -74,24 +79,23 @@
 
     <section class="features">
 
-        <div class="features__items container">
+        <div class="features__blocks container">
 
-
-            <div class="features__item">
+            <div class="features__block">
                 <h3 class="features__title">Real-time all the time</h3>
-                <p class="features__desc"> Thus much I thought proper to tell you in relation to yourself, and to
+                <p class="features__text text"> Thus much I thought proper to tell you in relation to yourself, and to
                     the trust I reposed in you.</p>
-                <p class="features__desc">Just then her head struck against the roof of the hall: in fact she was
+                <p class="features__text text">Just then her head struck against the roof of the hall: in fact she was
                     now more than nine feet high, and
                     she at once took up the little golden key and hurried off to the garden door.
                 </p>
             </div>
 
-            <div class="features__item">
+            <div class="features__block">
                 <h3 class="features__title">Adopt without any obstacles</h3>
-                <p class="features__desc"> This sounded a very good reason, and Alice was quite pleased to know it.
+                <p class="text"> This sounded a very good reason, and Alice was quite pleased to know it.
                     'I never thought of that before!' she said.</p>
-                <p class="features__desc">This I have produced as a scantling of Jack’s great eloquence and the
+                <p class="text">This I have produced as a scantling of Jack’s great eloquence and the
                     force of his reasoning upon such
                     abstruse matters.</p>
             </div>
@@ -105,41 +109,47 @@
 
     <!-- iphone -->
 
-    <section class="iphone container">
+    <section class="iphone iphone--img">
 
 
-        <img class="iphone__img" src="./img/phone/iPhone6.png" alt="iphone">
+        <!-- content -->
 
-        
-        <div class="iphone__content  container-small iphone__container-small">
-            <h2 class="iphone__title">Your day
-                is protected</h2>
+        <div class="iphone__content content">
 
-            <p class="iphone__text text">There have not been any since we have lived here, said my mother.</p>
-            <p class="iphone__text text">We thought - Mr. Copperfield thought - it was quite a large rookery; but the
+
+            <h2 class="content__title">Your day is protected</h2>
+
+            <p class="content__text text">There have not been any since we have lived here, said my mother.</p>
+            <p class="content__text text">We thought - Mr. Copperfield thought - it was quite a large rookery; but
+                the
                 nests were very old ones, and the birds have deserted them a long while.</p>
-            <a href="" class="iphone__btn btn btn--blue">Try to hack us</a>
-            <a href="" class="iphone__btn btn btn--transparent">Learn more</a>
-        </div>
+            <!-- btn -->
 
-    
+            <a href="" class="btn btn--blue">Try to hack us</a>
+            <a href="" class="btn btn--transparent">Learn more</a>
+
+        </div>
 
 
     </section> <!-- /.iphone -->
 
 
+
+
     <!-- map -->
 
-    <section class="map container">
+    <section class="map map--img">
 
-        <div class="map__content  container-small">
-
-            <h2 class="map__title">We are almost
+        <!-- content -->
+        <div class="map__content  content">
+            <h2 class="content__title">We are almost
                 everywhere</h2>
 
-            <p class="map__text text"> Now the races of these two have been for some ages utterly extinct, and besides
+            <p class="content__text text"> Now the races of these two have been for some ages utterly extinct, and
+                besides
                 to discourse any further of them would not be at all to my purpose.</p>
-            <p class="map__text text"> Thus much I thought proper to tell you in relation to yourself, and to the trust
+            <p class="content__text text"> Thus much I thought proper to tell you in relation to yourself, and to the
+                trust
                 I reposed in you.</p>
 
             <h3 class="map__partners">Partners</h3>
@@ -149,9 +159,8 @@
             <a href="" class="map__link">
                 <img class="map__image" src="./img/logo/Evernote.png" alt="evernote">
             </a>
-        </div>
 
-        <img class="map__img" src="./img/Map.png" alt="iphone">
+        </div>
 
     </section> <!-- /.map -->
 
@@ -161,19 +170,17 @@
     <!-- screen -->
 
     <section class="screen">
+        <!-- hgroup -->
         <h2 class="screen__title">Beautiful Interface</h2>
         <h3 class="screen__subtitle">Landing Screen</h3>
 
-        <div class="screen__items">
-            <div class="screen__item"> <img class="screen__img" src="./img/screen/S1.png" alt="screen1"> </div>
-            <div class="screen__item"> <img class="screen__img" src="./img/screen/S2.png" alt="screen2"> </div>
-            <div class="screen__item screen__item--big"> <img class="screen__img screen__img--big" src="./img/screen/scr3.png" alt="screen3">
-            </div>
-            <div class="screen__item"> <img class="screen__img" src="./img/screen/S4.png" alt="screen4"> </div>
-            <div class="screen__item"> <img class="screen__img" src="./img/screen/s5.png" alt="screen5"> </div>
-
+        <div class="screen__wrap-img">
+            <img class="screen__img screen__img--1" src="./img/screen/S1.png" alt="screen1">
+            <img class="screen__img screen__img--2" src="./img/screen/S2.png" alt="screen2">
+            <img class="screen__img screen__img--3 screen__img--active" src="./img/screen/s3.png" alt="screen3">
+            <img class="screen__img screen__img--4" src="./img/screen/S4.png" alt="screen4">
+            <img class="screen__img screen__img--5" src="./img/screen/s5.png" alt="screen5">
         </div>
-
 
     </section> <!-- /.screen -->
 
@@ -184,7 +191,7 @@
 
     <section class="smartphone">
 
-        <img class="smartphone__logo" src="./img/logo/NewProvidence1.png" alt="logo">
+        <img class="smartphone__logo" src="./img/logo/NewProvidence-opacity.png" alt="logo">
         <h2 class="smartphone__title title">Get it to your smartphone </h2>
 
         <form class="form" action="/" method="POST">
@@ -200,8 +207,8 @@
     </section> <!-- /.smartphone -->
 
 
-    <!-- feedback -->
-    <artical class="feedback container ">
+    <!-- reviews -->
+    <artical class="reviews">
 
 
         <!-- Slider main container -->
@@ -262,9 +269,7 @@
             <div class="swiper-button-next"></div>
 
 
-        </div> <!-- ./Slider main container -->
-
-
+        </div> <!-- ./reviews -->
 
 
     </artical> <!-- ./feedback -->
@@ -276,54 +281,64 @@
 
     <!-- plan -->
 
-    <section class="plan container">
+    <section class="plan">
 
-        <!-- <div class="plan__wrap"> -->
-        <div class="plan__content container-small">
-            <h2 class="plan__title title">Choose your perfect plan</h2>
-            <span class="plan_you">You are</span>
-            <button class="plan__btn btn">Individual</button>
-            <button class="plan__btn btn">Company</button>
-            <p class="plan__desc">Thus much I thought proper to tell you in relation to yourself, and to the trust I
-                reposed
-                in you.</p>
-            <p class="plan_bottom">Have a bigger team?
-                <a href="" class="plan__link"> Let‘s talk</a> </p>
-        </div>
+        <div class="plan__wrap container">
 
-        <div class="plan__boxes">
-            <div class="plan__box">
-                <h3 class="plan__subtitle">Starter</h3>
-                <span class="plan__price">Free</span>
-                <h4 class="plan__caption">Build your schedule every day</h4>
-
-                <ul class="plan__list">
-                    <li class="plan__item">Unlimeted events</li>
-                    <li class="plan__item">Connect Dropbox & Evernote</li>
-                </ul>
-
-                <button class="plan__btn btn btn--blue">Get started</button>
-
-            </div>
-            <div class="plan__box">
-                <h3 class="plan__subtitle">Pro</h3>
-                <span class="plan__price">$4.99</span>
-                <h4 class="plan__caption">Make your life
-                    better</h4>
-
-                <ul class="plan__list">
-                    <li class="plan__item">Unlimeted events</li>
-                    <li class="plan__item">Connect Dropbox & Evernote</li>
-                    <li class="plan__item">Personal Assistant</li>
-                </ul>
-
-                <button class="plan__btn btn btn--transparent">Make me a Pro</button>
-
+            <div class="plan__content">
+                <h2 class="plan__title title">Choose your perfect plan</h2>
+                <span class="plan_you">You are</span>
+                <button class="plan__btn btn">Individual</button>
+                <button class="plan__btn btn">Company</button>
+                <p class="plan__text text">Thus much I thought proper to tell you in relation to yourself, and to the
+                    trust I
+                    reposed
+                    in you.</p>
+                <span class="plan__bottom">Have a bigger team?
+                    <a href="" class="plan__link"> Let‘s talk</a> </span>
             </div>
 
-        </div>
 
-        <!-- </div> -->
+
+            <div class="plan__cards">
+                <div class="plan__card plan__card--active">
+                    <h3 class="plan__card-title">Starter</h3>
+                    <span class="plan__price">Free</span>
+                    <h4 class="plan__subtitle">Build your schedule every day</h4>
+
+                    <div class="plan__wrap-list">
+
+                        <ul class="plan__list">
+                            <li class="plan__item">Unlimeted events</li>
+                            <li class="plan__item">Connect Dropbox & Evernote</li>
+                        </ul>
+
+                    </div>
+
+                    <button class="plan__btn btn btn--blue">Get started</button>
+
+                </div>
+                <div class="plan__card">
+                    <h3 class="plan__card-title">Pro</h3>
+                    <span class="plan__price">$4.99</span>
+                    <h4 class="plan__subtitle">Make your life
+                        better</h4>
+
+                    <div class="plan__wrap-list">
+                        <ul class="plan__list">
+                            <li class="plan__item">Unlimeted events</li>
+                            <li class="plan__item">Connect Dropbox & Evernote</li>
+                            <li class="plan__item">Personal Assistant</li>
+                        </ul>
+                    </div>
+
+                    <button class="plan__btn btn btn--transparent">Make me a Pro</button>
+
+                </div>
+
+            </div>
+
+            <!-- </div> -->
 
     </section> <!-- /.plan -->
 
@@ -341,7 +356,7 @@
 
         </form>
 
-        <span class="subscribe__text">We promise to never spam you.</span>
+        <span class="subscribe__text text">We promise to never spam you.</span>
 
 
     </section> <!-- /.subscribe -->
@@ -350,12 +365,12 @@
 
     <!-- footer -->
 
-    <footer class="footer container">
+    <footer class="footer ">
 
-        <div class="footer__top">
+        <div class="footer__top container">
 
-            <div class="footer__boxes container-small">
-                <img class="footer__img" src="./img/logo/NewProvidence_f.png" alt="logo">
+            <div class="footer__boxes">
+                <img class="footer__img" src="./img/logo/NewProvidence.png" alt="logo">
 
                 <p class="footer__text">
                     It was some time before he obtained any answer, and the reply, when made, was unpropitious.
@@ -395,7 +410,7 @@
 
 
 
-            <div class="footer__boxes container-small">
+            <div class="footer__boxes">
 
                 <div class="footer__box">
 
@@ -415,8 +430,8 @@
                         <a class="footer__link" href="#">Privacy police</a>
                         <a class="footer__link" href="#">Terms & Conditions</a>
                     </div>
-                               
-                                      
+
+
                     <div class="footer__item">
                         <h3 class="footer__subtitle">Support</h3>
                         <a class="footer__link" href="#">F.A.Q.</a>
@@ -424,7 +439,7 @@
                         <a class="footer__link" href="#">Live chat</a>
                         <a class="footer__link" href="#">Phone call</a>
                     </div>
-                    
+
                 </div>
 
             </div> <!-- ./footer__boxes container-small -->
@@ -435,15 +450,11 @@
 
 
         <div class="footer__bottom">
-            <div class="footer__more">
-                <span class="footer__ps">For more freebies visit: </span>
-                <a class="footer__ps-link" href="#">http://getcraftwork.com</a>
-            </div>
+            <span class="footer__ps">For more freebies visit:<a class="footer__ps-link"
+                    href="#">http://getcraftwork.com</a> </span>
             <div class="footer__made">
                 <span class="by">Made with Love by</span>
                 <img src="./img/logo/Logo.png" alt="" class="footer__logo-by">
-
-
             </div>
         </div>
 

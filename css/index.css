@@ -1,6 +1,6 @@
 body {
     font-family: 'Lato', sans-serif;
-    max-width: 1600px;
+  
 }
 
 h2 {
@@ -22,15 +22,15 @@ section {
 }
 
 .container {
-    max-width: 1170px;
+    max-width: 1140px;
     margin: 0 auto;
     padding: 0 15px;
 }
 
-.container-small {
+/* .container-small {
     width: 470px;
     margin: 0;
-}
+} */
 
 /* 
 section {
@@ -43,10 +43,11 @@ section {
 /* ==========header============= */
 
 .header {
-    background: url('../img/header/bg.jpg') center center/cover no-repeat;
+    background: url('../img/bg_header.jpg') center center/cover no-repeat;
     height: 950px;
     overflow: hidden;
     position: relative;
+    
 }
 
 .header__top {
@@ -55,8 +56,10 @@ section {
 }
 
 .header__content {
-
+    max-width: 780px;
+    margin: 0 auto;
     text-align: center;
+        
 }
 
 .header__nav {
@@ -73,20 +76,6 @@ section {
 }
 
 
-
-
-/* .header__logo {
-    
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-
-    z-index: 1;
-    margin: auto;
-    text-align: center;
-} */
 
 .header__logo {
     position: absolute;
@@ -109,46 +98,60 @@ section {
 
 
 
-
 /* +++++++++++features============ */
-
-
-
-.features__items {
-    display: flex;
+.features {
+    padding: 120px 195px 120px 250px;
 }
 
-.features__item {
+.features__blocks {
+    display: flex;
+    
+}
+
+.features__block {
     width: 570px;
     padding: 0 40px 30px;
 
 }
 
+.features__block:first-child::before {
+    content: url("../img/icons/Lock.png");
+}
+
+
+.features__block:last-child::before {
+    content: url("../img/icons/Clock.png");
+}
+
+
+
+/* +++++++++++content============ */
+
+.content {
+    width: 470px;
+    margin: 200px;
+}
+
+
+
 
 /* +++++++++++iphone============ */
 
 
-
 .iphone {
     height: 943px;
-    position: relative;
-    /* overflow: hidden; */
+    
+    overflow: hidden;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-
-
-
+    background: #fff url("../img/bg_iPhone6.png") no-repeat left;
 }
 
 
 
-.iphone__img {
-    position: absolute;
-    display: block;
-    bottom: -30px;
-    left: -215px;
-}
+
+
 
 /* +++++++++++map============ */
 
@@ -156,21 +159,12 @@ section {
     display: flex;
     height: 800px;
     position: relative;
-    /* overflow: hidden; */
+    overflow: hidden;
     display: flex;
     align-items: center;
+    background: #fff url("../img/bg_map.png") no-repeat right;
 
 }
-
-
-.map__img {
-    position: absolute;
-    display: block;
-    bottom: 195px;
-    
-    right: -215px;
-}
-
 
 
 
@@ -179,17 +173,39 @@ section {
 
 .screen {
     text-align: center;
+    overflow: hidden;
 }
 
-.screen__items {
-    display: flex;
-    justify-content: space-between;
-    height: 1100px;
+
+
+.screen__title {
+    position: relative;
+    margin-bottom: 90px;
+}
+
+.screen__title::after {
+    content: "";
     
+    width: 80px;
+    height: 2px;
+    position: absolute;
+    top: 70px;
+    left: 50%;
+
+    transform: translateX(-50%);
+       
+    z-index: 10;
+    
+    background: #267df4;
 }
 
-.screen__img {
-    height: 100%;
+
+.screen__subtitle {
+    margin-bottom: 50px;
+}
+
+.screen__wrap-img {
+    display: flex;
    
 }
 
@@ -204,7 +220,7 @@ section {
 
 
 
-/* +++++++++++feedback============ */
+/* +++++++++++reviews============ */
 
 .swiper-container {
     width: 600px;
@@ -223,16 +239,42 @@ section {
 
 
 /* +++++++++++plan============ */
+
 .plan {
     display: flex;
     justify-content: space-between;
 
 }
 
-.plan__boxes {
+.plan__wrap {
     display: flex;
+    justify-content: space-between;
+}
+
+.plan__content {
+    width: 370px;
+    margin-right: 130px;
+}
+
+.plan__cards {
+    display: flex;
+    width: 670px;
+    
 
 }
+
+.plan__card {
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+   
+    
+}
+
+.plan__card--active {
+    width: 340px;
+}
+
 
 
 
@@ -257,6 +299,7 @@ section {
 .footer__boxes {
     display: flex;
     flex-direction: column;
+    width: 270px;
 }
 
 .social-icons__link {
@@ -284,5 +327,11 @@ section {
 .footer__bottom {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
+}
+
+.footer__made {
+    display: flex;
+    align-items: center;
 }
