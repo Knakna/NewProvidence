@@ -37,7 +37,7 @@
                 <ul class="header__list">
                     <li class="header__item">
                         <a class="header__link" href="#">
-                            <span class="header__link-opacity">Help</span>
+                            <span class="header__link--opacity">Help</span>
                         </a>
                     </li>
                     <li class="header__item">
@@ -52,7 +52,7 @@
 
 
             <a class="header__logo logo" href="#">
-                <img class="logo__img" src="./img/logo/NewProvidence.png" alt="logo"></img>
+                <img class="logo__img" src="./img/logo/NewProvidence.png" alt="logo">
             </a>
 
         </div> <!-- /.header__top  container -->
@@ -76,7 +76,6 @@
 
     <!-- features -->
 
-
     <section class="features">
 
         <div class="features__blocks container">
@@ -93,9 +92,9 @@
 
             <div class="features__block">
                 <h3 class="features__title">Adopt without any obstacles</h3>
-                <p class="text"> This sounded a very good reason, and Alice was quite pleased to know it.
+                <p class="features__text text"> This sounded a very good reason, and Alice was quite pleased to know it.
                     'I never thought of that before!' she said.</p>
-                <p class="text">This I have produced as a scantling of Jack’s great eloquence and the
+                <p class="features__text text">This I have produced as a scantling of Jack’s great eloquence and the
                     force of his reasoning upon such
                     abstruse matters.</p>
             </div>
@@ -109,88 +108,68 @@
 
     <!-- iphone -->
 
-    <section class="iphone iphone--img">
+    <section class="iphone">
 
         <div class="container">
 
+            <!-- content -->
 
-            <div class="iphone__wrap">
+            <div class="iphone__content content">
+                <h2 class="content__title">Your day is protected</h2>
+                <p class="content__text text">There have not been any since we have lived here, said my mother.</p>
+                <p class="content__text text">We thought - Mr. Copperfield thought - it was quite a large rookery;
+                    but the nests were very old ones, and the birds have deserted them a long while.</p>
 
+                <!-- btn -->
 
-                <!-- content -->
+                <a href="" class="iphone__btn btn btn--blue">Try to hack us</a>
+                <a href="" class="iphone__btn btn btn--transparent">Learn more</a>
 
-                <div class="iphone__content content">
-
-
-                    <h2 class="content__title">Your day is protected</h2>
-
-                    <p class="content__text text">There have not been any since we have lived here, said my mother.</p>
-                    <p class="content__text text">We thought - Mr. Copperfield thought - it was quite a large rookery;
-                        but
-                        the
-                        nests were very old ones, and the birds have deserted them a long while.</p>
-
-                    <!-- btn -->
-
-                    <a href="" class="btn btn--blue">Try to hack us</a>
-                    <a href="" class="btn btn--transparent">Learn more</a>
-
-                </div>
             </div>
 
-        </div>
-    </section> <!-- /.iphone -->
+        </div> <!-- /.container -->
 
+    </section> <!-- /.iphone -->
 
 
 
     <!-- map -->
 
-    <section class="map map--img">
+    <section class="map">
 
         <div class="container">
 
+            <!-- content -->
+            <div class="map__content  content">
+                <h2 class="content__title">We are almost
+                    everywhere</h2>
 
-            <div class="map__wrap">
+                <p class="content__text text"> Now the races of these two have been for some ages utterly extinct,
+                    and
+                    besides
+                    to discourse any further of them would not be at all to my purpose.</p>
+                <p class="content__text text"> Thus much I thought proper to tell you in relation to yourself, and
+                    to the trust I reposed in you.</p>
 
-                <!-- content -->
-                <div class="map__content  content">
 
-
-                    <h2 class="content__title">We are almost
-                        everywhere</h2>
-
-                    <p class="content__text text"> Now the races of these two have been for some ages utterly extinct,
-                        and
-                        besides
-                        to discourse any further of them would not be at all to my purpose.</p>
-                    <p class="content__text text"> Thus much I thought proper to tell you in relation to yourself, and
-                        to
-                        the
-                        trust
-                        I reposed in you.</p>
-
-                    <h3 class="map__partners">Partners</h3>
-                    <a href="" class="map__link">
-                        <img class="map__image" src="./img/logo/Dropbox.png" alt="dropbox">
-                    </a>
-                    <a href="" class="map__link">
-                        <img class="map__image" src="./img/logo/Evernote.png" alt="evernote">
-                    </a>
-                </div>
-
+                <h3 class="map__partners">Partners</h3>
+                <a href="" class="map__link">
+                    <img class="map__image" src="./img/logo/Dropbox.png" alt="dropbox">
+                </a>
+                <a href="" class="map__link">
+                    <img class="map__image" src="./img/logo/Evernote.png" alt="evernote">
+                </a>
             </div>
 
-        </div>
+        </div> <!-- /.container -->
     </section> <!-- /.map -->
-
 
 
 
     <!-- screen -->
 
     <section class="screen">
-        <!-- hgroup -->
+
         <h2 class="screen__title">Beautiful Interface</h2>
         <h3 class="screen__subtitle">Landing Screen</h3>
 
@@ -206,28 +185,29 @@
 
 
 
-
     <!-- smartphone -->
 
     <section class="smartphone">
 
         <img class="smartphone__logo" src="./img/logo/NewProvidence-opacity.png" alt="logo">
 
+        <!-- submit -->
 
         <div class="smartphone__content submit">
 
-
             <h2 class="submit__title title">Get it to your smartphone </h2>
+
+            <!-- form -->
 
             <form class="form" action="/" method="POST">
                 <input class="form__input" type="email" name="email" placeholder="denis@getcraftwork.com">
-                <button class="btn btn--in-input">Send Invite</button>
-
+                <button class="form__btn btn btn--input">Send Invite</button>
             </form>
 
-            <span class="submit__download">or Download From</span>
+            <span class="smartphone__download">or Download From</span>
 
         </div>
+
         <button class="smartphone__button button">Download on the
             App Store</button>
 
@@ -239,7 +219,6 @@
 
         <div class="container">
 
-
             <!-- Slider main container -->
             <div class="swiper-container">
                 <!-- Additional required wrapper -->
@@ -248,14 +227,11 @@
                     <div class="swiper-slide">
 
                         <div class="swiper-content">
-
-
                             <img class="swiper-img" src="./img/photo1.jpg" alt="Photo">
                             <h3 class="swiper-title">Very well is the great UI kit </h3>
-                            <q class="swiper-quote">Just then her head struck against the roof of the hall: in fact she was now more than
-                                nine feet
-                                high, and she at once took up the little golden key and hurried off to the garden
-                                door.</q>
+                            <q class="swiper-quote">Just then her head struck against the roof of the hall: in fact she
+                                was now more than nine feet high, and she at once took up the little golden key and
+                                hurried off to the garden door.</q>
                             <div class="swiper-stars">
                                 <img class="swiper-star" src="./img/icons/Star.png" alt="star">
                                 <img class="swiper-star" src="./img/icons/Star.png" alt="star">
@@ -264,19 +240,20 @@
                                 <img class="swiper-star" src="./img/icons/Star.png" alt="star">
                             </div>
                             <cite class="swiper-author">Cameron Klara</cite>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
+                        </div> <!-- ./swiper-content -->
 
+                    </div> <!-- ./swiper-slide -->
+
+
+                    <div class="swiper-slide">
 
                         <div class="swiper-content">
                             <img class="swiper-img" src="./img/Photo.png" alt="Photo">
-                            <h3 class="swiper-title">New Providence is the great UI kit </h3>  
-                                
-                            <q class="swiper-quote">Just then her head struck against the roof of the hall: in fact she was now more than
-                                nine feet
-                                high, and she at once took up the little golden key and hurried off to the garden
-                                door.</q>
+                            <h3 class="swiper-title">New Providence is the great UI kit </h3>
+
+                            <q class="swiper-quote">Just then her head struck against the roof of the hall: in fact she
+                                was now more than nine feet high, and she at once took up the little golden key and
+                                hurried off to the garden door.</q>
                             <div class="swiper-stars">
                                 <img class="swiper-star" src="./img/icons/Star.png" alt="star">
                                 <img class="swiper-star" src="./img/icons/Star.png" alt="star">
@@ -287,7 +264,7 @@
                             <cite class="swiper-author">Cameron Dowman</cite>
                         </div>
 
-                    </div>
+                    </div> <!-- ./swiper-slide -->
 
                     <div class="swiper-slide">
 
@@ -295,10 +272,9 @@
 
                             <img class="swiper-img" src="./img/photo3.jpg" alt="Photo">
                             <h3 class="swiper-title">NUI kit ew Providence is the great </h3>
-                            <q class="swiper-quote">Just then her head struck against the roof of the hall: in fact she was now more than
-                                nine feet
-                                high, and she at once took up the little golden key and hurried off to the garden
-                                door.</q>
+                            <q class="swiper-quote">Just then her head struck against the roof of the hall: in fact she
+                                was now more than nine feet high, and she at once took up the little golden key and
+                                hurried off to the garden door.</q>
                             <div class="swiper-stars">
                                 <img class="swiper-star" src="./img/icons/Star.png" alt="star">
                                 <img class="swiper-star" src="./img/icons/Star.png" alt="star">
@@ -307,11 +283,11 @@
                                 <img class="swiper-star" src="./img/icons/Star.png" alt="star">
                             </div>
                             <cite class="swiper-author">Wolf Roza</cite>
-                        </div>
+                        </div> <!-- ./swiper-content -->
 
-                    </div>
+                    </div> <!-- ./swiper-slide -->
 
-                </div>
+                </div> <!-- ./swiper-wrapper -->
 
 
                 <!-- If we need navigation buttons -->
@@ -323,12 +299,7 @@
 
         </div> <!-- ./container -->
 
-
-
     </article> <!-- ./reviews -->
-
-
-
 
 
 
@@ -344,75 +315,65 @@
                 <button class="plan__btn btn">Individual</button>
                 <button class="plan__btn btn">Company</button>
                 <p class="plan__text text">Thus much I thought proper to tell you in relation to yourself, and to the
-                    trust I
-                    reposed
-                    in you.</p>
+                    trust I reposed in you.</p>
                 <span class="plan__bottom">Have a bigger team?
                     <a href="" class="plan__link"> Let‘s talk</a> </span>
             </div>
 
 
-
             <div class="plan__cards">
-                <div class="plan__card plan__card--active">
+
+                <div class="plan__card plan__card  active">
                     <h3 class="plan__card-title">Starter</h3>
                     <span class="plan__price">Free</span>
                     <h4 class="plan__subtitle">Build your schedule every day</h4>
-
-                    <div class="plan__wrap-list">
-
-                        <ul class="plan__list">
-                            <li class="plan__item">Unlimeted events</li>
-                            <li class="plan__item">Connect Dropbox & Evernote</li>
-                        </ul>
-
-                    </div>
-
+                    <ul class="plan__list">
+                        <li class="plan__item">Unlimeted events</li>
+                        <li class="plan__item">Connect Dropbox & Evernote</li>
+                    </ul>
                     <button class="plan__btn btn btn--blue">Get started</button>
-
                 </div>
+
+
                 <div class="plan__card">
                     <h3 class="plan__card-title">Pro</h3>
                     <span class="plan__price">$4.99</span>
-                    <h4 class="plan__subtitle">Make your life
-                        better</h4>
-
-                    <div class="plan__wrap-list">
-                        <ul class="plan__list">
-                            <li class="plan__item">Unlimeted events</li>
-                            <li class="plan__item">Connect Dropbox & Evernote</li>
-                            <li class="plan__item">Personal Assistant</li>
-                        </ul>
-                    </div>
-
+                    <h4 class="plan__subtitle">Make your life better</h4>
+                    <ul class="plan__list">
+                        <li class="plan__item">Unlimeted events</li>
+                        <li class="plan__item">Connect Dropbox & Evernote</li>
+                        <li class="plan__item">Personal Assistant</li>
+                    </ul>
                     <button class="plan__btn btn btn--transparent">Make me a Pro</button>
-
                 </div>
 
-            </div>
+            </div> <!-- ./plan__card -->
 
-            <!-- </div> -->
+        </div> <!-- ./plan__wrap container"> -->
 
     </section> <!-- /.plan -->
 
 
 
     <!-- subscribe-->
+
     <section class="subscribe">
+
+        <!-- submit -->
+
         <div class="subscribe__content submit">
+            <h2 class="submit__title title">Subscribe our newsletters</h2>
 
-
-            <h2 class="submit_title title">Subscribe our newsletters</h2>
+            <!-- form -->
 
             <form class="form" action="/" method="POST">
                 <input class="form__input" type="email" name="email" placeholder="Your e-mail">
-                <button class="btn btn--in-input">Subscribe</button>
+                <button class="form__btn btn btn--in-input">Subscribe</button>
 
             </form>
 
-            <span class="submit__text text">We promise to never spam you.</span>
+            <span class="subscribe__text text">We promise to never spam you.</span>
         </div>
-
 
     </section> <!-- /.subscribe -->
 
@@ -425,40 +386,36 @@
         <div class="footer__top container">
 
             <div class="footer__boxes">
-                <img class="footer__img" src="./img/logo/NewProvidence.png" alt="logo">
 
+                <img class="footer__img" src="./img/logo/NewProvidence.png" alt="logo">
                 <p class="footer__text">
                     It was some time before he obtained any answer, and the reply, when made, was unpropitious.
                 </p>
+                <button class="footer__button button button--small">Download on the App Store</button>
 
-                <button class="footer__button button button--small">Download on the
-                    App Store</button>
+                <!-- social-icons -->
 
                 <div class="footer__social social-icons">
 
                     <a class="social-icons__link" href="#">
                         <img class="social-icons__img" src="./img/social/Twitter.png" alt="Twitter">
                     </a>
-
                     <a class="social-icons__link" href="#">
                         <img class="social-icons__img" src="./img/social/Facebook.png" alt="Facebook">
                     </a>
-
                     <a class="social-icons__link" href="#">
                         <img class="social-icons__img" src="./img/social/Google.png" alt="Google">
                     </a>
-
                     <a class="social-icons__link" href="#">
                         <img class="social-icons__img" src="./img/social/Tumbler.png" alt="Tumbler">
                     </a>
-
                     <a class="social-icons__link" href="#">
                         <img class="social-icons__img" src="./img/social/Pinterest.png" alt="Pinterest">
                     </a>
-
                     <a class="social-icons__link" href="#">
                         <img class="social-icons__img" src="./img/social/LinkedIn.png" alt="LinkedIn">
                     </a>
+
                 </div> <!-- ./footer__social social-icons -->
 
             </div> <!-- ./footer__boxes -->
@@ -495,7 +452,7 @@
                         <a class="footer__link" href="#">Phone call</a>
                     </div>
 
-                </div>
+                </div> <!-- ./footer__box -->
 
             </div> <!-- ./footer__boxes -->
 
@@ -515,7 +472,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> <!-- ./footer__bottom -->
 
 
     </footer> <!-- /.footer -->
