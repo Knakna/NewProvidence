@@ -1,12 +1,32 @@
 body {
-    font-family: 'Lato', sans-serif;
+    font: 20px/1.4 'Lato', sans-serif;
+    color: #8c8f94;
 
+    background-color: #fff;
 }
 
-h2 {
-    font-family: 'Varela Round', sans-serif;
+
+* {
+    box-sizing: border-box;
 }
 
+h2,
+h3,
+h4,
+ul,
+li,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
 
 
 .visuallyhidden {
@@ -19,24 +39,49 @@ h2 {
 
 
 
-
-
-
 .container {
     max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
     padding: 0 15px;
-
 }
 
+.title {
+    font: 42px/1.24 'Varela Round', sans-serif;
+    color: #26272d;
+}
 
+.text {
+    text-align: center;
+    color: #8c8f94;
+}
+
+.btn {
+    display: block;
+
+    position: relative;
+
+    font: 16px 'Lato', sans-serif;
+    color: #fff;
+    text-align: center;
+
+    border-radius: 21px;
+    background-color: #267df4;
+    border: 0;
+    outline: none;
+
+    cursor: pointer;
+    transition: background-color .2s linear;
+}
 
 /* ==========header============= */
 
 .header {
-    height: 1000px;
+    height: 100vh;
 
     position: relative;
+
+    padding-top: 45px;
 
     background: url('../img/bg_header.jpg') center center/cover no-repeat;
     overflow: hidden;
@@ -46,13 +91,11 @@ h2 {
     position: relative;
 }
 
-
-
 .header__nav {
     display: flex;
     justify-content: space-between;
 
-    margin: 44px 0 116px;
+    margin-bottom: 90px;
 }
 
 .header__list {
@@ -60,6 +103,74 @@ h2 {
     list-style: none;
     margin: 0;
     padding: 0;
+
+}
+
+.header__item:not(:last-of-type) {
+
+    margin-right: 40px;
+}
+
+.header__item--burger {
+    align-self: center;
+    justify-content: center;
+
+    position: relative;
+
+    width: 20px;
+    height: 1px;
+
+    border-radius: 1px;
+    background-color: #1b1c1e;
+}
+
+.header__item--burger::before {
+
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    z-index: 1;
+
+    width: 20px;
+    height: 1px;
+
+    border-radius: 1px;
+    background-color: #1b1c1e;
+}
+
+.header__item--burger::after {
+
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    right: 0px;
+    z-index: 1;
+
+    width: 20px;
+    height: 1px;
+
+    border-radius: 1px;
+    background-color: #1b1c1e;
+}
+
+
+.header__link {
+
+    font-size: 16px;
+
+    text-align: left;
+    color: #26272d;
+}
+
+.header__btn--app {
+    width: 142px;
+    min-height: 42px;
+
+
+
+    background: #267df4 url("../img/icons/Apple.png") 15px 10px no-repeat;
+
 
 }
 
@@ -83,10 +194,34 @@ h2 {
 
 .header__title {
     margin-bottom: 40px;
+
+    font-size: 62px;
+    line-height: 1.16;
+    text-align: center;
 }
 
 .header__text {
     margin-bottom: 62px;
+}
+
+.header__btn--content {
+
+    width: 205px;
+    height: 50px;
+
+    /* display: inline-block; */
+
+   
+    background: #267df4 url("../img/icons/Play.png") 30px 25px no-repeat;
+
+    border-radius: 25px;
+    border: solid 1px #dadcdf;
+    background-color: transparent;
+   
+    font-size: 16px;
+    text-align: center;
+    color: #26272d;
+
 }
 
 .header__img {
