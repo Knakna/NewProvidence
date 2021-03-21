@@ -77,6 +77,10 @@ a {
 /* ==========header============= */
 
 .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     height: 100vh;
 
     position: relative;
@@ -94,6 +98,7 @@ a {
 .header__nav {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     margin-bottom: 90px;
 }
@@ -103,11 +108,9 @@ a {
     list-style: none;
     margin: 0;
     padding: 0;
-
 }
 
 .header__item:not(:last-of-type) {
-
     margin-right: 40px;
 }
 
@@ -125,7 +128,6 @@ a {
 }
 
 .header__item--burger::before {
-
     content: "";
     position: absolute;
     top: 5px;
@@ -140,7 +142,6 @@ a {
 }
 
 .header__item--burger::after {
-
     content: "";
     position: absolute;
     bottom: 5px;
@@ -156,10 +157,8 @@ a {
 
 
 .header__link {
-
     font-size: 16px;
 
-    text-align: left;
     color: #26272d;
 }
 
@@ -167,18 +166,13 @@ a {
     width: 142px;
     min-height: 42px;
 
-
-
     background: #267df4 url("../img/icons/Apple.png") 15px 10px no-repeat;
-
-
 }
-
-
 
 .header__logo {
     position: absolute;
     z-index: 1;
+
     top: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -187,9 +181,13 @@ a {
 
 .header__content {
     max-width: 780px;
-    margin: 0 auto;
-    text-align: center;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
 }
 
 .header__title {
@@ -197,11 +195,10 @@ a {
 
     font-size: 62px;
     line-height: 1.16;
-    text-align: center;
 }
 
 .header__text {
-    margin-bottom: 62px;
+    margin-bottom: 50px;
 }
 
 .header__btn--content {
@@ -209,19 +206,18 @@ a {
     width: 205px;
     height: 50px;
 
-    /* display: inline-block; */
-
-   
     background: #267df4 url("../img/icons/Play.png") 30px 25px no-repeat;
 
     border-radius: 25px;
     border: solid 1px #dadcdf;
     background-color: transparent;
-   
-    font-size: 16px;
-    text-align: center;
-    color: #26272d;
 
+    font-size: 16px;
+    color: #26272d;
+}
+
+.btn--transparent {
+    background-color: transparent;
 }
 
 .header__img {
