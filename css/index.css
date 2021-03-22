@@ -77,9 +77,6 @@ a {
 /* ==========header============= */
 
 .header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
     height: 100vh;
 
@@ -100,7 +97,7 @@ a {
     justify-content: space-between;
     flex-wrap: wrap;
 
-    margin-bottom: 90px;
+    margin-bottom: 95px;
 }
 
 .header__list {
@@ -180,6 +177,7 @@ a {
 
 
 .header__content {
+    margin: 0 auto;
     max-width: 780px;
 
     display: flex;
@@ -235,20 +233,26 @@ a {
 
 /* +++++++++++features============ */
 
+.features {
+    padding: 125px 0 165px;
+}
+
 
 .features__blocks {
 
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 
 }
 
 .features__block {
-    max-width: 496px;
-    margin: 218px 30px 167px;
+    margin-right: 100px;
 
+    max-width: 500px;
+}
 
-
+.features__block:last-child {
+    margin-right: 0;
 }
 
 .features__block:first-child::before {
@@ -260,6 +264,20 @@ a {
     content: url("../img/icons/Clock.png");
 }
 
+.features__title {
+    margin: 30px 0 45px;
+
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 1.31;
+    color: #26272d;
+}
+
+.features__text {
+    margin-bottom: 25px;
+    font-size: 18px;
+    text-align: left;
+}
 
 
 
