@@ -37,13 +37,11 @@ a {
     overflow: hidden;
 }
 
-
-
 .container {
-    max-width: 1200px;
+    max-width: 1170px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 15px;
+    /* padding: 0 15px; */
 }
 
 .title {
@@ -74,10 +72,13 @@ a {
     transition: background-color .2s linear;
 }
 
+.btn--transparent {
+    background-color: transparent;
+}
+
 /* ==========header============= */
 
 .header {
-
     height: 100vh;
 
     position: relative;
@@ -97,18 +98,20 @@ a {
     justify-content: space-between;
     flex-wrap: wrap;
 
-    margin-bottom: 95px;
+    margin-bottom: 105px;
 }
 
 .header__list {
     display: flex;
-    list-style: none;
+    align-items: center;
+
     margin: 0;
     padding: 0;
 }
 
+
 .header__item:not(:last-of-type) {
-    margin-right: 40px;
+    margin-right: 35px;
 }
 
 .header__item--burger {
@@ -152,7 +155,6 @@ a {
     background-color: #1b1c1e;
 }
 
-
 .header__link {
     font-size: 16px;
 
@@ -160,21 +162,22 @@ a {
 }
 
 .header__btn--app {
-    width: 142px;
+    padding-left: 20px;
+
+    width: 132px;
     min-height: 42px;
 
-    background: #267df4 url("../img/icons/Apple.png") 15px 10px no-repeat;
+    background: #267df4 url("../img/icons/Apple.png") 15% 50% no-repeat;
 }
 
 .header__logo {
     position: absolute;
     z-index: 1;
 
-    top: 0;
+    top: 20%;
     left: 50%;
     transform: translateX(-50%);
 }
-
 
 .header__content {
     margin: 0 auto;
@@ -189,22 +192,24 @@ a {
 }
 
 .header__title {
-    margin-bottom: 40px;
+    margin-bottom: 35px;
 
     font-size: 62px;
     line-height: 1.16;
+    letter-spacing: -0.4px;
 }
 
 .header__text {
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 
 .header__btn--content {
+    padding-left: 30px;
 
     width: 205px;
     height: 50px;
 
-    background: #267df4 url("../img/icons/Play.png") 30px 25px no-repeat;
+    background: #267df4 url("../img/icons/Play.png") 20% 50% no-repeat;
 
     border-radius: 25px;
     border: solid 1px #dadcdf;
@@ -212,10 +217,6 @@ a {
 
     font-size: 16px;
     color: #26272d;
-}
-
-.btn--transparent {
-    background-color: transparent;
 }
 
 .header__img {
@@ -229,8 +230,6 @@ a {
 }
 
 
-
-
 /* +++++++++++features============ */
 
 .features {
@@ -239,33 +238,28 @@ a {
 
 
 .features__blocks {
-
     display: flex;
-    justify-content: center;
-
 }
 
 .features__block {
-    margin-right: 100px;
-
-    max-width: 500px;
+    max-width: 540px;
+    padding-left: 40px;
 }
 
-.features__block:last-child {
-    margin-right: 0;
+.features__block:first-child {
+    margin-right: 60px;
 }
 
 .features__block:first-child::before {
     content: url("../img/icons/Lock.png");
 }
 
-
 .features__block:last-child::before {
     content: url("../img/icons/Clock.png");
 }
 
 .features__title {
-    margin: 30px 0 45px;
+    margin: 30px 0 40px;
 
     font-size: 26px;
     font-weight: 300;
@@ -281,30 +275,100 @@ a {
 
 
 
+/* +++++++++++iphone============ */
+
+
+/* .iphone {
+
+    background: #fff url(../img/iPhone_6.png) -155px 85px no-repeat;
+
+    overflow: hidden;
+
+    padding-bottom: 40px;
+}
+
+
+@media (min-width: 1700px) {
+       .iphone {
+    background: #fff url(../img/iPhone_6.png) -50px 85px no-repeat;
+        
+    }
+} */
+
+
+
+.iphone__wrap {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    min-height: 900px;
+}
+
 
 /* +++++++++++content============ */
 
 .content {
-    width: 470px;
+    display: flex;
+    flex-direction: column;
+
+    max-width: 470px;
+
+    position: relative;
 
 }
 
-/* +++++++++++iphone============ */
-
-
-.iphone {
-
-    background: #fff url("../img/bg_iPhone6.png") no-repeat left;
-    overflow: hidden;
+.iphone_img {
+    position: absolute;
+    top: -30%;
+    left: -225%;
 }
 
-.iphone__content {
-    margin-left: auto;
-    /* padding: 250px 0; */
-    margin-top: 250px;
-    margin-bottom: 250px;
+.content__title {
+    margin-bottom: 65px;
+
+    letter-spacing: 0.4px;
+    font-size: 42px;
+    line-height: 1.24;
+    color: #26272d;
 }
 
+.content__text {
+    margin-bottom: 30px;
+
+    text-align: left;
+}
+
+.content__text:last-of-type {
+    margin-bottom: 75px;
+}
+
+
+.iphone__box-btn {
+    display: flex;
+}
+
+.iphone__btn {
+    padding: 8px 0 8px 25px;
+
+    text-align: left;
+}
+
+.iphone__btn--try {
+    width: 202px;
+    min-height: 42px;
+    background: #267df4 url("../img/icons/Arrow-wh.png") 20% 50% no-repeat;
+}
+
+.iphone__btn--more {
+    width: 142px;
+    min-height: 42px;
+
+    margin-left: 20px;
+
+    color: #26272d;
+    border: solid 1px #26272d;
+}
 
 
 
