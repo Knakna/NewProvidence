@@ -314,8 +314,12 @@ a {
 
     max-width: 470px;
 
-    position: relative;
+   
 
+}
+
+.iphone__content {
+    position: relative;
 }
 
 .iphone_img {
@@ -339,12 +343,14 @@ a {
     text-align: left;
 }
 
-.content__text:last-of-type {
+/* .content__text:last-of-type {
     margin-bottom: 75px;
-}
+} */
 
 
 .iphone__box-btn {
+    margin-top: 45px;
+
     display: flex;
 }
 
@@ -357,7 +363,7 @@ a {
 .iphone__btn--try {
     width: 202px;
     min-height: 42px;
-    background: #267df4 url("../img/icons/Arrow-wh.png") 20% 50% no-repeat;
+    background: #267df4 url("../img/icons/Arrow-wh.png") 90% 45% no-repeat;
 }
 
 .iphone__btn--more {
@@ -375,18 +381,42 @@ a {
 /* +++++++++++map============ */
 
 .map {
+    background: url(../img/Map.png) 746px 222px no-repeat;
+/* background-attachment: fixed; */
+}
 
-    background: #fff url("../img/bg_map.png") no-repeat right;
-    overflow: hidden;
+.map__wrap {
+    display: flex;
+    align-items: center;
 
-
+    min-height: 950px;
+    /* overflow: hidden; */
 }
 
 .map__content {
-    margin-right: auto;
-    padding: 250px 0;
+    position: relative;
 }
 
+
+.map__partners {
+    margin: 25px 0;
+
+    font: bold 12px/1.83 'Lato', sans-serif;
+    letter-spacing: 1.2px;
+    color: #26272d;
+    text-transform: uppercase;
+}
+
+.map__box {
+    margin-bottom: 30px;
+
+    display: flex;
+}
+
+
+.map__link {
+    margin-right: 30px;
+}
 
 
 
