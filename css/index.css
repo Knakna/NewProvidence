@@ -322,7 +322,7 @@ a {
     position: relative;
 }
 
-.iphone_img {
+.iphone__img {
     position: absolute;
     top: -30%;
     left: -225%;
@@ -330,11 +330,6 @@ a {
 
 .content__title {
     margin-bottom: 65px;
-
-    letter-spacing: 0.4px;
-    font-size: 42px;
-    line-height: 1.24;
-    color: #26272d;
 }
 
 .content__text {
@@ -381,8 +376,9 @@ a {
 /* +++++++++++map============ */
 
 .map {
-    background: url(../img/Map.png) 746px 222px no-repeat;
-/* background-attachment: fixed; */
+
+    overflow: hidden;
+    /* background: url(../img/Map.png) 746px 222px no-repeat; */
 }
 
 .map__wrap {
@@ -390,12 +386,10 @@ a {
     align-items: center;
 
     min-height: 950px;
-    /* overflow: hidden; */
-}
 
-.map__content {
     position: relative;
 }
+
 
 
 .map__partners {
@@ -418,6 +412,11 @@ a {
     margin-right: 30px;
 }
 
+.map__img {
+    position: absolute;
+    top: 23%;
+    left: 46%;
+}
 
 
 
@@ -425,26 +424,28 @@ a {
 /* +++++++++++screen============ */
 
 .screen {
-    text-align: center;
+    min-height: 1200px;
+
     overflow: hidden;
 
-    height: 1200px;
+    text-align: center;
 }
 
 
 
 .screen__title {
+    margin-bottom: 75px;
+
     position: relative;
-    margin-bottom: 90px;
 }
 
 .screen__title::after {
     content: "";
 
-    width: 80px;
+    width: 50px;
     height: 2px;
     position: absolute;
-    top: 70px;
+    top: 85px;
     left: 50%;
 
     transform: translateX(-50%);
@@ -456,24 +457,39 @@ a {
 
 
 .screen__subtitle {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+    line-height: 1.83;
+    letter-spacing: 1.2px;
+   
+    color: #8c8f94;
+
 }
 
 .screen__wrap-img {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+}
 
+.screen__img {
+    margin: 0 -45px;
 }
 
 .screen__img--1 {
-    width: 237px;
-    height: 568px;
+    /* width: 237px;
+    height: 568px; */
+    width: 438px;
+    height: 686px;  
 }
 
 .screen__img--2 {
-    width: 320px;
-    height: 568px;
+    width: 438px;
+    height: 686px;
 }
 
 .screen__img--3 {
@@ -482,20 +498,23 @@ a {
 }
 
 .screen__img--active {
-    width: 363px;
-    height: 753px;
+    width: 485px;
+    height: 871px;
 }
 
-
-
 .screen__img--4 {
-    width: 320px;
-    height: 568px;
+    width: 438px;
+    height: 686px;
+    /* width: 320px;
+    height: 568px; */
 }
 
 .screen__img--5 {
-    width: 245px;
-    height: 568px;
+    /* width: 245px;
+    height: 568px; */
+
+    width: 438px;
+    height: 686px;
 }
 
 
