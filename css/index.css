@@ -45,7 +45,7 @@ a {
 }
 
 .title {
-    font: 42px/1.24 'Varela Round', sans-serif;
+    font: 42px 'Varela Round', sans-serif;
     color: #26272d;
 }
 
@@ -314,7 +314,7 @@ a {
 
     max-width: 470px;
 
-   
+
 
 }
 
@@ -424,7 +424,7 @@ a {
 /* +++++++++++screen============ */
 
 .screen {
-    min-height: 1200px;
+    /* min-height: 1200px; */
 
     overflow: hidden;
 
@@ -462,10 +462,10 @@ a {
     font-size: 12px;
     font-weight: bold;
     text-transform: uppercase;
-    
+
     line-height: 1.83;
     letter-spacing: 1.2px;
-   
+
     color: #8c8f94;
 
 }
@@ -484,7 +484,7 @@ a {
     /* width: 237px;
     height: 568px; */
     width: 438px;
-    height: 686px;  
+    height: 686px;
 }
 
 .screen__img--2 {
@@ -523,9 +523,128 @@ a {
 
 
 .smartphone {
+    padding: 100px 0 130px;
+
+    background-color: f5f5f8;
     text-align: center;
-    padding: 75px 0 142px;
+
+    /* min-height: 545px; */
 }
+
+.smartphone__logo {
+    margin-bottom: 25px;
+}
+
+.smartphone__title {
+    margin-bottom: 45px;
+
+    letter-spacing: -0.2px;
+}
+
+.form {
+    display: inline-block;
+
+    position: relative;
+}
+
+.form__input {
+    padding: 4px 26px;
+    padding-left: 25px;
+
+    display: inline-block;
+
+    min-height: 50px;
+    width: 502px;
+
+    border: solid 1px #cbcbce;
+
+
+    border-radius: 25px;
+
+    outline: none;
+}
+
+.smartphone__form {
+    margin-bottom: 60px;
+}
+
+
+.form__input::placeholder {
+    display: block;
+
+    font-size: 16px;
+    color: #3a3d4b;
+
+    transition: all 500ms ease;
+}
+
+.form__input:focus {
+    border: solid 1px #6fc754;
+}
+
+
+.form__input:focus::placeholder {
+    transform: translateX(-90%)
+}
+
+
+.form__btn {
+    padding-left: 30px;
+
+    width: 164px;
+    height: 42px;
+
+    position: absolute;
+    top: 4px;
+    right: 4px;
+
+    background: #6fc754 url("../img/icons/Arrow-wh.png") 83% 45% no-repeat;
+
+    border-radius: 21px;
+    border: none;
+    outline: none;
+
+    text-align: left;
+}
+
+
+.smartphone__download {
+    display: block;
+
+    margin-bottom: 20px;
+
+    font-size: 14px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: -0.2px;
+    color: rgba(58, 61, 75, 0.3);
+}
+
+
+
+
+.smartphone__button {
+    padding: 0 30px 0 65px;
+
+    width: 210px;
+    min-height: 60px;
+
+    color: #fff;
+    text-align: left;
+    font-size: 12px;
+
+    border-radius: 30px;
+    background: #131315 url("../img/icons/Applebig.png") 13% 40% no-repeat;
+}
+
+.smartphone__big {
+    font-size: 20px;
+    letter-spacing: 1.8px;
+
+}
+
+
+
 
 
 
@@ -691,10 +810,40 @@ a {
 
 /* +++++++++++subscribe====== */
 .subscribe {
+    padding: 90px 0;
+
     text-align: center;
 }
 
+.subscribe__title {
+    margin-bottom: 40px;
+}
 
+
+
+.subscribe__form {
+    margin-bottom: 25px;
+}
+
+.form__input--subscribe {
+    width: 562px;
+
+    border: solid 1px #d4d4d5;
+}
+
+.form__btn--subscribe {
+    width: 134px;
+
+    background-color: #6fc754;
+}
+
+.subscribe__text {
+    display: block;
+
+    font-size: 14px;
+    line-height: 1.2;
+    color: #8c8f94;
+}
 
 
 
@@ -706,6 +855,29 @@ a {
     justify-content: space-between;
 
 }
+
+
+
+
+
+
+
+
+
+
+.button--small {
+    width: 140px;
+    height: 42px;
+
+    border-radius: 16px;
+    background-color: #231f20;
+}
+
+
+
+
+
+
 
 .footer__boxes {
     display: flex;

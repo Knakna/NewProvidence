@@ -207,25 +207,21 @@
 
         <img class="smartphone__logo" src="./img/logo/NewProvidence-opacity.png" alt="logo">
 
-        <!-- submit -->
+        <h2 class="smartphone__title title">Get it to your smartphone </h2>
 
-        <div class="smartphone__content submit">
+        <!-- form -->
 
-            <h2 class="submit__title title">Get it to your smartphone </h2>
+        <form class="smartphone__form form" action="/" method="POST">
+            <input class="form__input" type="email" name="email" placeholder="denis@getcraftwork.com">
+            <button class="form__btn btn">Send Invite</button>
+        </form>
 
-            <!-- form -->
+        <span class="smartphone__download">or Download From</span>
 
-            <form class="form" action="/" method="POST">
-                <input class="form__input" type="email" name="email" placeholder="denis@getcraftwork.com">
-                <button class="form__btn btn btn--input">Send Invite</button>
-            </form>
 
-            <span class="smartphone__download">or Download From</span>
-
-        </div>
-
-        <button class="smartphone__button button">Download on the
-            App Store</button>
+        <button class="smartphone__button">Download on the
+            <span class="smartphone__big">App Store</span>
+        </button>
 
     </section> <!-- /.smartphone -->
 
@@ -375,16 +371,14 @@
 
     <section class="subscribe">
 
-        <!-- submit -->
-
-        <div class="subscribe__content submit">
-            <h2 class="submit__title title">Subscribe our newsletters</h2>
+        <div class="subscribe__content">
+            <h2 class="subscribe__title title">Subscribe our newsletters</h2>
 
             <!-- form -->
 
-            <form class="form" action="/" method="POST">
-                <input class="form__input" type="email" name="email" placeholder="Your e-mail">
-                <button class="form__btn btn btn--in-input">Subscribe</button>
+            <form class="subscribe__form form" action="/" method="POST">
+                <input class="form__input form__input--subscribe" type="email" name="email" placeholder="Your e-mail">
+                <button class="form__btn form__btn--subscribe btn">Subscribe</button>
 
             </form>
 
