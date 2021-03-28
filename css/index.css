@@ -548,7 +548,6 @@ a {
 }
 
 .form__input {
-    padding: 4px 26px;
     padding-left: 25px;
 
     display: inline-block;
@@ -557,7 +556,6 @@ a {
     width: 502px;
 
     border: solid 1px #cbcbce;
-
 
     border-radius: 25px;
 
@@ -819,8 +817,6 @@ a {
     margin-bottom: 40px;
 }
 
-
-
 .subscribe__form {
     margin-bottom: 25px;
 }
@@ -834,6 +830,7 @@ a {
 .form__btn--subscribe {
     width: 134px;
 
+    background: none;
     background-color: #6fc754;
 }
 
@@ -850,71 +847,138 @@ a {
 
 /* +++++++++++footer============ */
 
+.footer {
+    background-color: #d4d4d5;
+}
+
 .footer__top {
     display: flex;
     justify-content: space-between;
 
+    padding: 90px 0 135px;
+}
+
+.footer__img {
+    margin-bottom: 30px;
+
+    width: 140px;
+    height: 16px;
 }
 
 
+.footer__text {
+    margin-bottom: 30px;
 
+    font-size: 14px;
+    line-height: 1.71;
+}
 
+.footer__button {
+    margin-bottom: 35px;
+    padding-left: 40px;
 
-
-
-
-
-
-.button--small {
     width: 140px;
     height: 42px;
 
-    border-radius: 16px;
-    background-color: #231f20;
+    font-weight: bold;
+    color: #fff;
+    text-align: left;
+    font-size: 10px;
+    border-radius: 6px;
+    background: #000 url("../img/icons/Apple.png") 13% 40% no-repeat;
+
+}
+
+.footer__big {
+    font-size: 18px;
 }
 
 
-
-
-
-
-
-.footer__boxes {
+.footer__inner {
     display: flex;
     flex-direction: column;
+
     width: 270px;
 }
 
+.footer__inner:last-child {
+    width: 570px;
+}
+
 .social-icons__link {
-    text-decoration: none;
+    margin-right: 20px;
 }
 
 .footer__box {
     display: flex;
-    flex-direction: row;
+
+    margin-right: -15px;
 }
 
-.footer__img {
-    width: 140px;
-    height: 16px;
+.footer__item {
+    flex: 1 0 33.333%;
+}
 
+.footer__subtitle {
+    margin-bottom: 15px;
+    font-size: 12px;
+    font-weight: bold;
+
+    line-height: 1.83;
+    letter-spacing: 1.2px;
+    color: #26272d;
+    text-transform: uppercase;
 }
 
 .footer__link {
     display: block;
+
+    font-size: 16px;
+    line-height: 2.25;
+    text-align: left;
+    color: #8c8f94;
+
 }
-
-
-
 
 .footer__wrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
+    padding: 15px 0;
+
+    border-top: 0.5px solid #e3e3e4;
+}
+
+.footer__ps {
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.footer__ps-link {
+    color: #3b55e6;
 }
 
 .footer__made {
     display: flex;
     align-items: center;
+}
+
+.footer__by {
+    margin-right: 10px;
+
+    font-size: 9px;
+    font-weight: bold;
+    line-height: 2.44;
+    letter-spacing: 0.9px;
+    color: #26272d;
+    text-transform: uppercase;
+}
+
+.footer__logo-by {
+    margin-right: 15px;
+}
+
+.del    {
+    width: 100vh;
 }
