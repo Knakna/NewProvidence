@@ -38,10 +38,10 @@ a {
 }
 
 .container {
-    max-width: 1170px;
+    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    /* padding: 0 15px; */
+    padding: 0 15px;
 }
 
 .title {
@@ -72,8 +72,21 @@ a {
     outline: none;
 
     cursor: pointer;
-    transition: background-color .2s linear;
+    transition: all .2s linear;
 }
+
+.btn:focus {
+    box-shadow: 0 0 5px #1a0252;
+}
+
+.btn:hover {
+    background-color: #7aa1ce;
+}
+
+.btn:active {
+    background-color: #1c5ebb;
+}
+
 
 .btn--transparent {
     background-color: transparent;
@@ -107,9 +120,6 @@ a {
 .header__list {
     display: flex;
     align-items: center;
-
-    margin: 0;
-    padding: 0;
 }
 
 
@@ -118,9 +128,6 @@ a {
 }
 
 .burger {
-    align-self: center;
-    justify-content: center;
-
     position: relative;
 
     width: 20px;
@@ -158,10 +165,23 @@ a {
     background-color: #1b1c1e;
 }
 
+.header__item {
+    cursor: pointer;
+}
+
 .header__link {
     font-size: 16px;
 
     color: #26272d;
+
+    transition: all .2s linear;
+}
+
+.header__link:hover {
+    color: #267df4;
+
+    padding-bottom: 5px;
+    border-bottom: 2px solid #267df4;
 }
 
 .header__btn-app {
@@ -188,16 +208,12 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-
-    text-align: center;
 }
 
 .header__title {
     margin-bottom: 35px;
 
     font-size: 62px;
-    line-height: 1.2;
 }
 
 .header__text {
@@ -210,36 +226,39 @@ a {
     width: 205px;
     height: 50px;
 
-    background: #267df4 url("../img/icons/Play.png") 20% 50% no-repeat;
+    background: url("../img/icons/Play.png") 20% 50% no-repeat;
 
     border-radius: 25px;
     border: solid 1px #dadcdf;
-    background-color: transparent;
 
     font-size: 16px;
     color: #26272d;
 }
 
 .header__img {
-    width: 370px;
-    display: block;
     position: absolute;
     z-index: 1;
     bottom: -300px;
     left: 50%;
+
     transform: translateX(-50%);
 }
 
 
 /* +++++++++++features============ */
 
+
 .features {
-    padding: 125px 0 165px;
+    /* padding: 125px 0 165px; */
+    display: flex;
+    align-items: center;
+    min-height: 600px;
 }
 
 
 .features__blocks {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .features__block {
@@ -295,10 +314,6 @@ a {
         
     }
 } */
-
-.iphone {
-    overflow: hidden;
-}
 
 .iphone__wrap {
     display: flex;
@@ -361,7 +376,7 @@ a {
 
     color: #26272d;
     text-align: left;
-    border: solid 1px #26272d;
+    border: solid 1px #e9e9ea;
 }
 
 
@@ -413,16 +428,20 @@ a {
 
 
 
-
 /* +++++++++++screen============ */
 
 .screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    min-height: 1200px;
+
     overflow: hidden;
 
     text-align: center;
+    background-color: #f5f5f8;
 }
-
-
 
 .screen__title {
     margin-bottom: 75px;
@@ -484,12 +503,17 @@ a {
 
 
 .smartphone {
-    padding: 100px 0 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-    background-color: f5f5f8;
+    min-height: 545px;
+
+    background-color: #f5f5f8;
     text-align: center;
 
-    /* min-height: 545px; */
+    /* padding: 100px 0 130px; */
 }
 
 .smartphone__logo {
@@ -503,15 +527,11 @@ a {
 }
 
 .form {
-    display: inline-block;
-
     position: relative;
 }
 
 .form__input {
     padding-left: 25px;
-
-    display: inline-block;
 
     min-height: 50px;
     width: 502px;
@@ -527,8 +547,6 @@ a {
 
 
 .form__input::placeholder {
-    display: block;
-
     font-size: 16px;
     color: #3a3d4b;
 
@@ -565,8 +583,6 @@ a {
 
 
 .smartphone__download {
-    display: block;
-
     margin-bottom: 20px;
 
     font-size: 14px;
@@ -575,9 +591,6 @@ a {
     letter-spacing: -0.2px;
     color: rgba(58, 61, 75, 0.3);
 }
-
-
-
 
 .smartphone__button {
     padding: 0 30px 0 65px;
@@ -591,6 +604,19 @@ a {
 
     border-radius: 30px;
     background: #131315 url("../img/icons/Applebig.png") 13% 40% no-repeat;
+
+    cursor: pointer;
+    transition: all .2s linear;
+}
+
+.smartphone__button:focus {
+    outline: none;
+    border: none;
+    background-color: #6fc754;
+}
+
+.smartphone__button:hover {
+    opacity: .7;
 }
 
 .smartphone__big {
@@ -602,14 +628,18 @@ a {
 
 
 
-
-
-
 /* +++++++++++reviews============ */
 
 .reviews {
-    /* height: 750px; */
-    padding: 132px 0 128px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 40px;
+
+    height: 750px;
+
+    /*  padding: 165px 0 95px; */
 }
 
 
@@ -639,7 +669,7 @@ a {
 }
 
 .swiper-img {
-    margin-bottom: 75px;
+    margin-bottom: 50px;
 
     width: 130px;
     height: 130px;
@@ -717,16 +747,32 @@ a {
 
 .swiper-button-next {
     position: absolute;
-    top: 100px;
+    top: 35px;
+    right: 25px;
     color: #26292c;
     opacity: 0.2;
 }
 
+.swiper-button-next:focus {
+    outline: none;
+    border: none;
+    background-color: #6fc754;
+
+}
+
 .swiper-button-prev {
     position: absolute;
-    top: 100px;
+    top: 35px;
+    left: 25px;
     color: #26292c;
     opacity: 0.2;
+}
+
+.swiper-button-prev:focus {
+    outline: none;
+    border: none;
+    background-color: #6fc754;
+
 }
 
 
@@ -738,7 +784,6 @@ a {
 
 .plan {
     display: flex;
-    justify-content: space-between;
 
     min-height: 900px;
 
@@ -747,10 +792,7 @@ a {
 
 .plan__wrap {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-
-    position: relative;
 }
 
 .plan__content {
@@ -765,7 +807,7 @@ a {
     font-size: 12px;
     font-weight: bold;
 
-    line-height: 1.83;
+    line-height: 1.8;
     letter-spacing: 1.2px;
     text-transform: uppercase;
     color: #26272d;
@@ -811,8 +853,6 @@ a {
 .plan__text {
     padding-bottom: 30px;
 
-    font-size: 20px;
-    line-height: 1.4;
     text-align: left;
 }
 
@@ -949,7 +989,12 @@ a {
 /* +++++++++++subscribe====== */
 
 .subscribe {
-    padding: 90px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 350px;
 
     text-align: center;
 }
@@ -993,7 +1038,7 @@ a {
     justify-content: space-between;
     flex-wrap: wrap;
 
-    padding: 90px 0 135px;
+    padding: 90px 15px 135px;
 
     border-top: 0.5px solid #e3e3e4;
 }
@@ -1002,7 +1047,6 @@ a {
     margin-bottom: 30px;
 
     width: 140px;
-    height: 16px;
 }
 
 
@@ -1010,7 +1054,7 @@ a {
     margin-bottom: 30px;
 
     font-size: 14px;
-    line-height: 1.71;
+    line-height: 1.7;
 }
 
 .footer__button {
@@ -1027,6 +1071,19 @@ a {
     border-radius: 6px;
     background: #000 url("../img/icons/Apple.png") 13% 40% no-repeat;
 
+    cursor: pointer;
+    transition: all .2s linear;
+}
+
+
+.footer__button:focus {
+    outline: none;
+    border: none;
+    background-color: #6fc754;
+}
+
+.footer__button:hover {
+    opacity: .7;
 }
 
 .footer__big {
@@ -1047,7 +1104,17 @@ a {
 
 .social__link {
     margin-right: 20px;
+
+    transition: all .2s linear;
 }
+
+
+.social__link:hover {
+    padding-bottom: 5px;
+    border-bottom: 2px solid #000;
+}
+
+
 
 .footer__box {
     display: flex;
@@ -1079,7 +1146,14 @@ a {
     text-align: left;
     color: #8c8f94;
 
+    transition: all .2s linear;
 }
+
+.footer__link:hover {
+    color: #000;
+}
+
+
 
 .footer__wrap {
     display: flex;
