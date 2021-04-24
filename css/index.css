@@ -490,13 +490,18 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    /* overflow-x: auto; */
+
 }
 
 .screen__img {
+    /* flex-grow: 1; */
     margin: 0 -45px;
 
     width: 438px;
     height: 686px;
+
 }
 
 
