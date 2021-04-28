@@ -498,7 +498,6 @@ a {
     align-items: center;
     justify-content: center;
 
-    /* overflow-x: auto; */
 
 }
 
@@ -516,6 +515,10 @@ a {
     width: 485px;
     height: 871px;
 }
+
+/* .screen__img:not(:nth-child(3)):hover {
+    transform: scale(1.1);
+} */
 
 
 
@@ -917,6 +920,27 @@ a {
     box-shadow: 10.3px 28.2px 50px 0 rgba(92, 95, 101, 0.2);
 }
 
+/*
+.plan__card:hover {
+    padding-top: 60px;
+
+    width: 340px;
+    height: 550px;
+
+    background-color: #fff;
+    box-shadow: 10.3px 28.2px 50px 0 rgba(92, 95, 101, 0.2);
+}
+
+.active.plan__card:hover .active {
+    padding-top: 40px;
+
+    width: 330px;
+    height: 510px;
+
+    background-color: #ebebed;
+    border-radius: 10px;
+} */
+
 
 .plan__card-title {
     margin-bottom: 20px;
@@ -1224,9 +1248,11 @@ a {
 
 
 
-/* +++++++max-height 960===== */
+/* === max-HEIGHT 960 === */
 
 @media only screen and (max-height: 960px) {
+
+    /* ==header== */
 
     .header__img {
         display: none;
@@ -1235,22 +1261,108 @@ a {
 }
 
 
+/* * +++++++max-width 1400===== */
 
 
+@media only screen and (max-width: 1400px) {
 
+/* ==features== */
 
-
-/* * +++++++max-width 900===== */
-
-
-@media only screen and (max-width: 1200px) {
     .features {
-        padding: 70px 0 70px;
+        padding: 80px 0;
+    }
+
+    .features__block {
+        padding: 0 50px;
     }
 
     .features__block:first-child {
         margin-right: 0;
     }
+
+    .iphone__wrap {
+
+        align-items: center;
+        min-height: 600px;
+    }
+
+/* ==swiper== */
+
+    .swiper-container {
+        width: inherit;
+    }
+
+    .swiper-button-prev {
+        top: 425px;
+        left: 90px;
+    }
+
+    .swiper-button-next {
+        top: 425px;
+        right: 90px;
+    }
+
+}
+
+
+
+/* * +++++++max-width 1110===== */
+
+
+@media only screen and (max-width: 1110px) {
+
+    /* ==screen== */
+
+    .screen__inner {
+        min-height: inherit;
+        padding: 40px 0;
+    }
+
+    .screen__wrap {
+        justify-content: start;
+
+        overflow-x: auto;
+    }
+
+    .screen__img:first-child {
+        margin-left: 0px;
+    }
+
+/* ==plan== */
+
+    .plan__title {
+        margin-bottom: 30px;
+    }
+
+    .plan {
+        padding: 70px 0;
+    }
+
+    .plan__wrap {
+        flex-direction: column;
+    }
+
+    .plan__content {
+        margin-right: 0;
+
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .plan__box {
+        display: flex;
+        justify-content: center;
+
+        margin-bottom: 40px;
+    }
+
+    .plan__btn-individ {
+        left: 50%;
+
+        transform: translateX(-124px);
+    }
+
 
 }
 
@@ -1258,6 +1370,8 @@ a {
 
 
 @media only screen and (max-width: 900px) {
+
+    /* ==header== */
 
     .header {
         padding-top: 100px;
@@ -1278,6 +1392,10 @@ a {
         font-size: 20px;
     }
 
+    .title {
+        font-weight: 700;
+    }
+
     .text {
         font-size: 24px;
     }
@@ -1286,9 +1404,11 @@ a {
         display: none;
     }
 
+    /* ==features== */
+
     .features__blocks {
-   flex-wrap: wrap;
-   flex-direction: column;
+        flex-wrap: wrap;
+        flex-direction: column;
     }
 
     .features__block {
@@ -1299,14 +1419,60 @@ a {
         margin-bottom: 40px;
     }
 
-
+    .features__text {
+        margin-bottom: 10px;
+    }
 
     .features__title {
-        font-size: 28px;
         margin: 20px 0;
+
+        font-size: 28px;
         font-weight: 700;
     }
 
+    /* ==iphone == */
+    .iphone,
+    .map {
+        padding-bottom: 80px;
+    }
+
+    .iphone__img,
+    .map__img {
+        display: none;
+    }
+
+    .iphone__wrap,
+    .map__wrap {
+        justify-content: center;
+        align-items: flex-start;
+        min-height: inherit;
+    }
+
+    .iphone__box {
+        margin: 40px 0 0;
+    }
+
+    /* ==content== */
+    .content {
+        max-width: 100%;
+        min-height: inherit;
+    }
+
+    .content__br {
+        display: none;
+    }
+
+    .content__title {
+        margin-bottom: 20px;
+    }
+
+    .content__text {
+        margin-bottom: 15px;
+    }
+
+    .map__partners {
+        margin: 40px 0 20px;
+    }
 
 }
 
@@ -1315,8 +1481,11 @@ a {
 
 @media only screen and (max-width: 767px) {
 
+    /* ==header== */
+
     .header__logo {
         top: -10px;
+
         transform: scale(2) translateX(-22%);
     }
 
@@ -1326,12 +1495,82 @@ a {
 
     .header__title {
         margin-bottom: 25px;
+
         font-size: 48px;
     }
 
+/* ==form== */
+
+    .form {
+        margin-bottom: 20px;
+
+        width: 100%;
+    }
+
+    .form__input {
+        width: 80%;
+    }
+
+    .form__btn {
+        /* width: 80%; */
+        position: static;
+        margin: 20px auto;
+    }
+
+/* ==smartphone== */
+
+    .smartphone {
+        padding: 0 15px;
+    }
+
+    /* ==subscribe== */
+
+    .subscribe {
+        padding: 50px 15px;
+    }
+
+/* ==swiper== */
+
+    .swiper-content::before {
+        content: none;
+    }
+
+    .swiper-content::after {
+        content: none;
+    }
+
+    .swiper-content {
+        width: 310px;
+    }
+
+    .swiper-buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .swiper-button-next {
+        position: static;
+    }
+
+    .swiper-button-prev {
+        position: static;
+    }
+
+    /* ==plan== */
+
+    .plan__cards {
+        flex-direction: column;
+
+        margin-top: 40px;
+    }
 }
 
+
+/* +++++++max-width 450===== */
+
 @media only screen and (max-width: 450px) {
+
+/* ==header== */
 
     .header {
         padding-top: 50px;
@@ -1343,7 +1582,80 @@ a {
 
     .header__title {
         margin-bottom: 20px;
+
         font-size: 40px;
     }
 
+/* ==screen== */
+
+    .screen__title {
+        margin-bottom: 20px;
+    }
+
+    .screen__title::after {
+        content: none;
+    }
+
+    .screen__img {
+        margin: 0 -20px;
+
+        width: 320px;
+        /* height: 501px; */
+        height: inherit;
+    }
+
+/* ==plan== */
+
+    .plan__btn-company {
+        padding-right: 0;
+
+        width: 100%;
+
+        text-align: center;
+        transform: scale(.95)
+    }
+
+    .plan__box {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .plan__btn-individ {
+        position: static;
+
+        width: 100%;
+        height: 50px;
+
+        transform: translateX(0);
+    }
+
+    .plan__card {
+        width: 250px;
+        height: 440px;
+    }
+
+    .active {
+        padding-top: 20px;
+
+        transform: scale(1.1);
+    }
+
+    .plan__price {
+        margin-bottom: 20px;
+    }
+
+    .plan__list {
+        min-height: inherit;
+    }
+
+    .title {
+        font-size: 36px;
+    }
+
 }
+
+
+
+/* +++++++max-width 450===== */
+
+@media only screen and (max-width: 375px) {}
