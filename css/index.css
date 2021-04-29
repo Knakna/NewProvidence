@@ -97,11 +97,11 @@ a {
 /* ==========header============= */
 
 .header {
-    height: 100vh;
+    min-height: 100vh;
 
     position: relative;
 
-    padding-top: 45px;
+    padding: 45px 0 100px;
 
     background: url('../img/bg_header.jpg') center center/cover no-repeat;
     overflow: hidden;
@@ -1238,9 +1238,6 @@ a {
     margin-right: 15px;
 }
 
-.del {
-    height: 100vh;
-}
 
 
 
@@ -1266,7 +1263,7 @@ a {
 
 @media only screen and (max-width: 1400px) {
 
-/* ==features== */
+    /* ==features== */
 
     .features {
         padding: 80px 0;
@@ -1281,12 +1278,12 @@ a {
     }
 
     .iphone__wrap {
-
         align-items: center;
+
         min-height: 600px;
     }
 
-/* ==swiper== */
+    /* ==swiper== */
 
     .swiper-container {
         width: inherit;
@@ -1314,8 +1311,9 @@ a {
     /* ==screen== */
 
     .screen__inner {
-        min-height: inherit;
         padding: 40px 0;
+
+        min-height: inherit;
     }
 
     .screen__wrap {
@@ -1328,7 +1326,7 @@ a {
         margin-left: 0px;
     }
 
-/* ==plan== */
+    /* ==plan== */
 
     .plan__title {
         margin-bottom: 30px;
@@ -1470,10 +1468,48 @@ a {
         margin-bottom: 15px;
     }
 
+    /* ==map== */
+
     .map__partners {
         margin: 40px 0 20px;
     }
 
+
+    /* ==footer== */
+
+    .footer__top {
+        flex-direction: column;
+
+        padding: 50px 15px;
+    }
+
+    .footer__inner {
+        align-items: center;
+
+        margin-bottom: 50px;
+
+        width: 100%;
+    }
+
+    .footer__text {
+        text-align: center;
+    }
+
+    .footer__inner:last-child {
+        margin-bottom: 0;
+
+        width: 100%;
+    }
+
+    .footer__box {
+        justify-content: space-evenly;
+
+        width: 100%;
+    }
+
+    .footer__item {
+        max-width: 100px;
+    }
 }
 
 
@@ -1499,7 +1535,7 @@ a {
         font-size: 48px;
     }
 
-/* ==form== */
+    /* ==form== */
 
     .form {
         margin-bottom: 20px;
@@ -1512,12 +1548,12 @@ a {
     }
 
     .form__btn {
-        /* width: 80%; */
         position: static;
+
         margin: 20px auto;
     }
 
-/* ==smartphone== */
+    /* ==smartphone== */
 
     .smartphone {
         padding: 0 15px;
@@ -1529,7 +1565,7 @@ a {
         padding: 50px 15px;
     }
 
-/* ==swiper== */
+    /* ==swiper== */
 
     .swiper-content::before {
         content: none;
@@ -1563,6 +1599,21 @@ a {
 
         margin-top: 40px;
     }
+
+    /* ==footer== */
+
+    .footer__wrap {
+        flex-direction: column;
+    }
+
+    .footer__ps {
+        text-align: center;
+    }
+
+    .footer__made {
+        margin-top: 15px;
+    }
+
 }
 
 
@@ -1570,7 +1621,7 @@ a {
 
 @media only screen and (max-width: 450px) {
 
-/* ==header== */
+    /* ==header== */
 
     .header {
         padding-top: 50px;
@@ -1586,7 +1637,43 @@ a {
         font-size: 40px;
     }
 
-/* ==screen== */
+    /* ==iphone== */
+
+    .iphone__box {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .iphone__btn-try {
+        margin-bottom: 20px;
+
+        min-width: 80%;
+    }
+
+    .iphone__btn-more {
+        margin-left: 0;
+
+        min-width: 80%;
+    }
+
+    /* ==map== */
+
+    .map__partners {
+        margin: 20px 0;
+    }
+
+    .map__box {
+        flex-direction: column;
+
+        margin: 0;
+    }
+
+    .map__link {
+        margin-bottom: 20px;
+    }
+
+
+    /* ==screen== */
 
     .screen__title {
         margin-bottom: 20px;
@@ -1604,7 +1691,7 @@ a {
         height: inherit;
     }
 
-/* ==plan== */
+    /* ==plan== */
 
     .plan__btn-company {
         padding-right: 0;
@@ -1612,6 +1699,7 @@ a {
         width: 100%;
 
         text-align: center;
+
         transform: scale(.95)
     }
 
@@ -1652,10 +1740,37 @@ a {
         font-size: 36px;
     }
 
+    /* ==footer== */
+
+    .footer__box {
+        justify-content: space-evenly;
+    }
+
+    .footer__link {
+        font-size: 12px;
+    }
+
+    .footer__subtitle {
+        font-size: 10px;
+    }
+
 }
 
 
 
-/* +++++++max-width 450===== */
+/* +++++++max-width 375===== */
 
-@media only screen and (max-width: 375px) {}
+@media only screen and (max-width: 375px) {
+
+    /* ==swiper== */
+
+    .swiper-title {
+        font-size: 30px;
+    }
+
+
+    .swiper-content {
+        width: 245px;
+    }
+
+}
