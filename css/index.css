@@ -711,7 +711,7 @@ a {
     height: 90px;
 
     border-radius: 50%;
-    background: url(../img/userpic1.png) 5px 5px no-repeat;
+    background: url(../img/user1.png) 5px 5px no-repeat;
 }
 
 .swiper-content::after {
@@ -724,7 +724,7 @@ a {
     height: 90px;
 
     border-radius: 50%;
-    background: url(../img/userpic3.png) -5px -5px no-repeat;
+    background: url(../img/user3.png) -5px -5px no-repeat;
 
 }
 
