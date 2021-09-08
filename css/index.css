@@ -673,6 +673,8 @@ a {
     padding: 0 5px;
 
     position: relative;
+
+    overflow: hidden;
 }
 
 .swiper-wrapper {
@@ -689,6 +691,7 @@ a {
     width: 570px;
 
     text-align: center;
+
 }
 
 .swiper-img {
